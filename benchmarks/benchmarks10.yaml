@@ -1,0 +1,8 @@
+# FAIL
+# More complex multi step where we are expecting the model to call the modify mood, get reccomendations, and then add to the playlist. 
+- prompt: "I’m going to go on a run right now, can you add some upbeat songs to my playlist."
+  expected_responses: 
+    - expected_type: modify-mood
+    - expected_type: get-recommendations
+    - expected_type: add-to-playlist
+  
